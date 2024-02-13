@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import Keypad from "~/components/keypadComps/Keypad";
 import { ModeToggle } from "~/components/mode-toggle";
 import { Button } from "~/components/ui/button";
 
@@ -6,11 +7,16 @@ export const meta: MetaFunction = () => {
   return [{ title: "PassCode inference" }];
 };
 
-export default function Index() {
+export default function Index(): JSX.Element {
   return (
-    <div className="grid grid-cols-[30%_40%_30%] grid-rows-[20%_80%] h-screen gap-1	p-2">
-      <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
+    <div className="h-screen gap-1 p-2 grid grid-cols-[30%_40%_30%]">
+      <div className="">
         <Button>Some random button that doesnt do anything!</Button>
+      </div>
+      <div className="grid">
+        <Keypad />
+      </div>
+      <div className="">
         <ModeToggle />
       </div>
     </div>
