@@ -13,7 +13,7 @@ export default function Index(): JSX.Element {
       <div className="">
         <Button>Some random button that doesnt do anything!</Button>
       </div>
-      <div className="grid">
+      <div className="">
         <Keypad />
       </div>
       <div className="">
