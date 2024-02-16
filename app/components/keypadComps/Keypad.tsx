@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
 import { Card } from "../ui/card";
+import "./keypad.css";
 
 function Keypad(): JSX.Element {
   const [code, setCode] = useState("");
@@ -21,17 +22,20 @@ function Keypad(): JSX.Element {
   }
 
   return (
-    <Card className="h-full p-4">
+    <Card className="h-5/6 w-3/4 p-4">
       <div className="w-full h-1/5 flex items-center">
-        <Card className="p-2 h-24 w-full overflow-x-auto overflow-y-hidden scrollbar-thin scrollbar-thumb-primary scrollbar-track-transparent">
-          <p className="text-7xl">{code}</p>
+        <Card
+          className="p-2 h-24 w-full overflow-x-auto overflow-y-hidden scrollbar-thin scrollbar-thumb-primary scrollbar-track-transparent scrollbar-thumb-custom-border-radius"
+        //TODO: scroll-bar border radius isn't effecteds
+        >
+          <p className="text-6xl">{code}</p>
         </Card>
-      </div>
+      </div >
       <Card className="grid grid-cols-3 h-4/5 gap-1 place-items-center">
         {buttons}
       </Card>
       {/* <NumButton number={1} /> all buttons */}
-    </Card>
+    </Card >
   );
 }
 

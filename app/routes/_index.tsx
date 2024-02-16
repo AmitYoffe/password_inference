@@ -13,10 +13,10 @@ export default function Index(): JSX.Element {
       <div className="">
         <Button>Some random button that doesnt do anything!</Button>
       </div>
-      <div className="">
+      <div className="flex items-center justify-center">
         <Keypad />
       </div>
-      <div className="">
+      <div className="absolute top-2 right-2">
         <ModeToggle />
       </div>
     </div>

@@ -1,4 +1,4 @@
-.numPad {
+/* .numPad {
     background-color: #d6d8d7;
     padding: 10px;
     border-radius: 20px;
@@ -219,4 +219,9 @@ p {
 .period p {
     margin-top: 10px;
     font-weight: bold;
+} */
+
+.scrollbar-thumb-custom-border-radius {
+    border-radius: 10px;
 }
+/* This isn't actually applied */
