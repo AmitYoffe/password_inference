@@ -1,7 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import Keypad from "~/components/keypadComps/Keypad";
 import { ModeToggle } from "~/components/mode-toggle";
-import { Button } from "~/components/ui/button";
 import { Chart } from "~/components/ui/graph";
 
 export const meta: MetaFunction = () => {
